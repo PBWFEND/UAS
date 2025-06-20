@@ -1,7 +1,7 @@
 | Mata Kuliah   | Pemrograman Berbasis Web Front End     |
 | :------------ | :------------------------------------- |
-| Program Studi | Teknik Informatika / Sistem Informasi  |
-| Jenis Ujian   | Praktikum Proyek Individu              |
+| Program Studi | Sistem Informasi  |
+| Jenis Ujian   | Praktikum Proyek Team               |
 | Durasi        | 5 - 7 Hari Pengerjaan                  |
 | Sifat Ujian   | Open Book, Open Internet               |
 
