@@ -2,6 +2,7 @@ Berikut adalah contoh implementasi tugas proyek CRUD menggunakan React dengan te
 
 ## 🚀 Demo Aplikasi
 Aplikasi sudah di-deploy di Vercel: [https://book-manager-demo.vercel.app](https://book-management-app-psi.vercel.app/)
+https://mybooklibrary.vercel.app
 
 ## 📂 Struktur Proyek
 ```
