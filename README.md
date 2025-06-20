@@ -1,5 +1,3 @@
-# Ujian Akhir Semester Praktikum (Proyek CRUD Bebas)
-
 | Mata Kuliah   | Pemrograman Berbasis Web Front End     |
 | :------------ | :------------------------------------- |
 | Program Studi | Teknik Informatika / Sistem Informasi  |
