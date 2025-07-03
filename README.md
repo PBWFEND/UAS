@@ -102,7 +102,7 @@ Apapun tema yang Anda pilih, aplikasi Anda WAJIB memiliki fungsionalitas berikut
 1. Buat file `README.md` yang informatif di dalam repositori GitHub Anda.
 2. File README.md wajib berisi:
 
-   - **Nama Kelompok & NIM** Anda.
+   - **Nama Kelompok/KLS & NIM** Anda.
    - **Tema & Deskripsi Aplikasi:** Jelaskan aplikasi apa yang Anda buat dan fitur-fiturnya.
    - **Struktur Data**: Jelaskan struktur objek yang Anda gunakan untuk aplikasi Anda.
    - **Link Aplikasi Live**: URL Vercel/Netlify Anda yang sudah berfungsi.
