@@ -39,7 +39,7 @@ Fungsi utama aplikasi adalah untuk mencatat, mengelola, dan memantau penyelesaia
 
 ## 📂 Struktur Folder Utama:
 
-/src
+```/src
 ├── App.jsx
 ├── main.jsx
 ├── index.css
@@ -56,6 +56,8 @@ README.md
 ---
 
 ## 🔗 Link Deploy
+
+```
 
 **Vercel:** [https://manajementugas.vercel.app/]
 **Repo GitHub:** [https://github.com/230660221001/UAS.git]
