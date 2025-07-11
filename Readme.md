@@ -1,38 +1,91 @@
-Kelompok 4 
-Kelas A semester 4
-Anggota: 
-Wendi Feriyanda (230660221026)
-Sesi Pramesti (230660221017)
-Lala Jalaliah (230660221019)
-Amelia Oktaviani (230660221127)
-Yulia Rizky Afifah (230660221090)
-Clara Desmiati (230660221005)
+UJIAN AKHIR SEMESTER (UAS) GENAP TAHUN AKADEMIK 2024/2025
+Mata Kuliah: Pemrograman Berbasis Web Front-End
+Semester/SKS: IV-A/B / 3 SKS
+Program Studi: S1 Sistem Informasi
+Hari/Tanggal: Kamis / Jumat
+Waktu: 13.00 – 15.30
+Dosen: Yanyan Sofiyan, M.Kom.
+Bentuk Soal: Analisis/Essay/Pilihan Ganda/Presentasi/Penugasan/Proyek *)
+Pelaksanaan: Luring / Daring *)
 
-Tema Proyek: 🎬 Manajemen Film Pribadi
+A. Deskripsi Umum
+Anda diberi kebebasan untuk memilih dan merancang sendiri tema aplikasi, dengan syarat utama aplikasi tersebut merupakan aplikasi CRUD (Create, Read, Update, Delete). Fokus utama penilaian adalah pada logika CRUD yang fungsional dan antarmuka pengguna (UI/UX) yang baik. Seluruh data akan dikelola di sisi klien (client-side).
 
-📌 Penjelasan Tema:
-Sebuah aplikasi berbasis web untuk membantu pengguna mencatat, mengelola, dan melacak daftar film yang ingin atau telah ditonton, dengan tampilan modern, ringan, dan dukungan mode gelap.
+B. Tema Proyek: Bebas & Kreatif
+Pilihlah sebuah ide aplikasi yang memungkinkan pengguna untuk mengelola sekumpulan data. Kreativitas dalam memilih tema dihargai, selama semua persyaratan teknis di bawah ini terpenuhi.
 
-🎯 Tujuan Proyek:
-- Membantu pengguna menyimpan daftar film favorit
-- Memberi informasi apakah film sudah ditonton atau belum
-- Bisa melakukan tambah, edit, hapus, cari, dan filter
-- Menyediakan pengalaman interaktif dengan notifikasi toast dan UI elegan
+Contoh Ide Proyek (Anda tidak harus memilih dari daftar ini):
 
-💡 Fitur-Fitur yang Mendukung Tema:
-Fitur	Deskripsi
-➕ Tambah Film	Masukkan judul, sutradara, dan status
-✅❌ Status Tontonan	Tandai apakah sudah/ belum ditonton
-✏️ Edit & 🗑 Hapus	Modifikasi atau hapus film dengan mudah
-🔍 Pencarian	Cari film berdasarkan judul
-🎛 Filter	Tampilkan hanya film yang sudah / belum ditonton
-🌗 Mode Gelap	Tema terang & gelap modern
-🔔 Toast Notification	Pemberitahuan visual untuk aksi pengguna
-💾 localStorage	Data tersimpan di browser, tidak hilang saat refresh
+Aplikasi Manajemen Tugas (To-do List): Menambah, melihat, menandai selesai, dan menghapus tugas.
+Aplikasi Pencatat Keuangan Sederhana: Mencatat pemasukan dan pengeluaran.
+Aplikasi Daftar Kontak: Mengelola daftar kontak teman atau kolega.
+Aplikasi Catatan Sederhana (Simple Notes): Membuat, mengedit, dan menghapus catatan singkat.
+Aplikasi Manajemen Buku (Bookshelf App): Mengelola koleksi buku yang sudah atau akan dibaca.
+Struktur Data
+Anda bebas menentukan struktur data untuk setiap item di aplikasi Anda, namun wajib memiliki:
 
-🛠 Stack Teknologi:
-- React.js → Library UI
-- Tailwind CSS → Styling responsif dan dark mode
-- Vite → Build tool modern
-- localStorage → Penyimpanan data di browser
+Sebuah id yang unik (bisa menggunakan String(+new Date()) atau library seperti uuid).
+Minimal dua properti data lainnya (contoh: { title: 'Belajar React', isDone: false }).
+Sebagai contoh referensi, untuk proyek "Aplikasi Manajemen Buku", Anda bisa menggunakan struktur data yang lebih detail seperti ini:
 
+// HANYA CONTOH
+{
+  id: string,         // ID unik (timestamp string)
+  title: string,      // Judul buku
+  author: string,     // Nama penulis
+  isRead: boolean,    // Status sudah dibaca/belum
+  addedDate: string   // Tanggal penambahan (format lokal)
+}
+Persistensi Data (Wajib)
+Gunakan localStorage untuk menyimpan data agar tidak hilang saat browser ditutup atau di-refresh. Manfaatkan hook useEffect untuk melakukan sinkronisasi antara state aplikasi dengan localStorage.
+
+C. Persyaratan Teknis & Fungsionalitas Wajib
+Apapun tema yang Anda pilih, aplikasi Anda WAJIB memiliki fungsionalitas berikut:
+
+Struktur & State Management (Bobot: 25%)
+Gunakan Vite untuk inisialisasi proyek.
+Terapkan konsep "lifting state up": State utama (array data) harus berada di komponen level atas (App.jsx) dan fungsi handler (untuk CRUD) dioper ke komponen anak melalui props.
+Buat komponen yang logis dan dapat digunakan kembali (misal: FormInput, ItemList, Item).
+Fungsionalitas CRUD (Create, Read, Update, Delete) (Bobot: 40%)
+CREATE: Sediakan form untuk menambah data baru. Form harus menyertakan validasi dasar (misal: input utama tidak boleh kosong).
+
+READ: Tampilkan semua data yang ada dengan jelas.
+
+(Nilai Plus): Jika data dapat dikelompokkan berdasarkan kategori atau status (misal: "Tugas Belum Selesai" dan "Tugas Selesai").
+UPDATE: Sediakan cara untuk mengubah data yang sudah ada.
+
+Minimal: Pengguna harus bisa mengubah satu properti (misal: mengubah status dari "belum selesai" menjadi "selesai").
+(Nilai Plus): Adanya fungsionalitas edit penuh melalui sebuah form.
+DELETE: Sediakan tombol untuk menghapus data. Wajib menampilkan dialog konfirmasi (gunakan window.confirm()) sebelum data dihapus permanen.
+
+3. UI/UX & Interaktivitas (Bobot: 20%)
+Desain Antarmuka: Tampilan harus bersih, rapi, dan mudah dipahami oleh pengguna.
+
+Umpan Balik (Feedback): Berikan umpan balik yang jelas kepada pengguna (misal: form dikosongkan setelah submit berhasil, notifikasi sederhana, dll).
+
+Fitur Pencarian/Filter: Wajib ada fitur untuk mencari atau memfilter data berdasarkan salah satu propertinya secara real-time.
+
+4. Deployment & Kualitas Kode (Bobot: 15%)
+Kode harus bersih, terstruktur, dan mudah dibaca.
+
+Unggah proyek ke repositori GitHub.
+
+Deploy aplikasi Anda ke Vercel atau Netlify dan pastikan berfungsi dengan baik.
+
+D. Kriteria Penilaian Rinci
+Kriteria	Bobot
+Fungsionalitas CRUD Lengkap & Benar	40%
+Manajemen State, Props, & Alur Data	25%
+Desain UI/UX dan Interaktivitas Pengguna	20%
+Kualitas Kode, Deployment, & Dokumentasi	15%
+Total	100%
+E. Prosedur Pengumpulan
+Buat file README.md yang informatif di dalam repositori GitHub Anda.
+
+File README.md wajib berisi:
+
+Nama Kelompok/KLS & NIM Anda.
+Tema & Deskripsi Aplikasi: Jelaskan aplikasi apa yang Anda buat dan fitur-fiturnya.
+Struktur Data: Jelaskan struktur objek yang Anda gunakan untuk aplikasi Anda.
+Link Aplikasi Live: URL Vercel/Netlify Anda yang sudah berfungsi.
+Push ke repositori https://github.com/PBWFEND/UAS
