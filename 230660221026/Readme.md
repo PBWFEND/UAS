@@ -37,3 +37,31 @@ Fitur	Deskripsi
 - Vite → Build tool modern
 - localStorage → Penyimpanan data di browser
 
+🧱 STRUKTUR OBJEK UTAMA: film
+
+Setiap film yang ditambahkan ke daftar akan disimpan dalam bentuk objek
+📦 DI MANA OBJEK INI DIGUNAKAN?
+1. Di dalam state utama React (App.jsx)
+const [films, setFilms] = useState([]);
+films adalah array dari objek film
+2. Saat menambahkan film baru:
+const filmData = {
+  id: Date.now(),
+  title,
+  director,
+  watched
+};
+addFilm(filmData);
+3. Saat mengedit:
+
+Disamakan dengan ID:
+
+film.id === updatedFilm.id ? updatedFilm : film
+4. Saat disimpan ke localStorage:
+
+localStorage.setItem("films", JSON.stringify(films));
+
+    Disimpan dalam bentuk JSON array yang berisi objek-objek film
+
+    
+link aplikasi live : https://film-manager-wens.netlify.app/
