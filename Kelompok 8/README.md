@@ -57,8 +57,8 @@ README.md
 
 ## 🔗 Link Deploy
 
-**Vercel:** [https://kelompok8pbw.vercel.app](https://kelompok8pbw.vercel.app)  
-**Repo GitHub:** [https://github.com/230660221001/UAS](https://github.com/230660221001/UAS)
+**Vercel:** [https://manajementugas.vercel.app/]
+**Repo GitHub:** [https://github.com/230660221001/UAS.git]
 
 ---
 
