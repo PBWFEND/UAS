@@ -52,12 +52,11 @@ package.json
 vite.config.js
 .gitignore
 README.md
+```
 
 ---
 
 ## 🔗 Link Deploy
-
-```
 
 **Vercel:** [https://manajementugas.vercel.app/]
 **Repo GitHub:** [https://github.com/230660221001/UAS.git]
