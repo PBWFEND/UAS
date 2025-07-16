@@ -37,7 +37,6 @@ Setiap data buku disimpan dalam format berikut:
   addedDate: string   // Tanggal penambahan
 }
 
-LINK APLIKASI
+LINK APLIKASI BUKU
 manajement-bukuku-kelompok5.netlify.app
 
-    
