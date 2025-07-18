@@ -1,6 +1,6 @@
 # 🎓 Edu-Time – Smart Activity & Time Manager for Students
 
-Aplikasi manajemen tugas dan aktivitas mahasiswa berbasis web, modern, profesional, dan interaktif. Dibuat dengan React + TailwindCSS + Vite, lengkap dengan fitur CRUD, pencarian real-time, animasi, dan tampilan mewah bergaya startup.
+Aplikasi manajemen tugas dan aktivitas mahasiswa berbasis web, modern, profesional, dan interaktif. Dibuat dengan React + TailwindCSS + Vite, lengkap dengan fitur CRUD, pencarian real-time, dan animasi.  
 
 ---
 
@@ -23,7 +23,7 @@ Aplikasi manajemen tugas dan aktivitas mahasiswa berbasis web, modern, profesion
 - 📂 Kategori aktivitas (Tugas, Ujian, Rapat, dll)
 - 🌗 Dark/Light Mode
 - 🧠 Status indikator selesai/belum
-- 🎨 Desain mewah dengan **animasi teks & logo interaktif**
+- 🎨 Desain dengan **animasi teks & logo interaktif**
 - 💾 Konfirmasi sebelum menghapus
 - 📱 Responsive & user friendly
 

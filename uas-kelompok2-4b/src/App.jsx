@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Home from './pages/Home';
+import toast, { Toaster } from 'react-hot-toast';
 
 function App() {
   const [activities, setActivities] = useState(() => {
@@ -33,16 +34,25 @@ function App() {
 
   const handleAddActivity = (activity) => {
     setActivities((prev) => [...prev, activity]);
+    toast.success('Aktivitas berhasil ditambahkan!');
   };
 
   const handleUpdateActivity = (updated) => {
-    setActivities((prev) =>
-      prev.map((act) => (act.id === updated.id ? updated : act))
-    );
+    const yakin = window.confirm('Anda yakin ingin memperbarui aktivitas ini?');
+    if (yakin) {
+      setActivities((prev) =>
+        prev.map((act) => (act.id === updated.id ? updated : act))
+      );
+      toast.success('Aktivitas berhasil diperbarui!');
+    }
   };
 
   const handleDeleteActivity = (id) => {
-    setActivities((prev) => prev.filter((act) => act.id !== id));
+    const yakin = window.confirm('Anda yakin ingin menghapus aktivitas ini?');
+    if (yakin) {
+      setActivities((prev) => prev.filter((act) => act.id !== id));
+      toast.success('Aktivitas berhasil dihapus!');
+    }
   };
 
   const handleSearch = (term) => {
@@ -58,18 +68,21 @@ function App() {
   };
 
   return (
-    <Home
-      activities={activities}
-      onAddActivity={handleAddActivity}
-      onUpdateActivity={handleUpdateActivity}
-      onDeleteActivity={handleDeleteActivity}
-      searchTerm={searchTerm}
-      onSearch={handleSearch}
-      filterCategory={filterCategory}
-      onFilter={handleFilter}
-      darkMode={darkMode}
-      toggleDarkMode={toggleDarkMode}
-    />
+    <>
+      <Toaster position="top-right" />
+      <Home
+        activities={activities}
+        onAddActivity={handleAddActivity}
+        onUpdateActivity={handleUpdateActivity}
+        onDeleteActivity={handleDeleteActivity}
+        searchTerm={searchTerm}
+        onSearch={handleSearch}
+        filterCategory={filterCategory}
+        onFilter={handleFilter}
+        darkMode={darkMode}
+        toggleDarkMode={toggleDarkMode}
+      />
+    </>
   );
 }
 
