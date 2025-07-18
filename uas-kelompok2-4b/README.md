@@ -35,9 +35,7 @@ Aplikasi manajemen tugas dan aktivitas mahasiswa berbasis web, modern, profesion
 ![dark-mode](./src/assets/tampilan-dark.png)
 
 ### ☀️ Light Mode (mobile)
-![light-mode](./src/assets/tampilan-light.png)
-
-> 📸 Screenshot disimpan di folder `src/assets/` dan bisa diganti dengan hasil akhir kalian.
+![light-mode](./src/assets/tampilan-light.png)  
 
 ---
 
