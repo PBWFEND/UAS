@@ -31,11 +31,17 @@ Aplikasi manajemen tugas dan aktivitas mahasiswa berbasis web, modern, profesion
 
 ## 📸 Tampilan Aplikasi
 
-### 💻 Dark Mode 
+### 💻 Dark Mode (Desktop) 
 ![dark-mode](./src/assets/tampilan-dark.png)
 
-### ☀️ Light Mode 
+### ☀️ Light Mode (Desktop) 
 ![light-mode](./src/assets/tampilan-light.png)  
+
+### 💻 Dark Mode (Mobile) 
+![dark-mode](./src/assets/tampilan-dark-mobile.jpg)  
+
+### ☀️ Light Mode (Mobile) 
+![light-mode](./src/assets/tampilan-light-mobile.jpg)  
 
 ---
 
