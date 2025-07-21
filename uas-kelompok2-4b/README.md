@@ -1,8 +1,5 @@
-# 🎓 Edu-Time – Smart Activity & Time Manager for Students
 
-Aplikasi manajemen tugas dan aktivitas mahasiswa berbasis web, modern, profesional, dan interaktif. Dibuat dengan React + TailwindCSS + Vite, lengkap dengan fitur CRUD, pencarian real-time, dan animasi.  
-
----
+---  
 
 ## 👨‍👩‍👧‍👦 Kelompok 2 – Kelas SI-IVB
 
@@ -14,20 +11,28 @@ Aplikasi manajemen tugas dan aktivitas mahasiswa berbasis web, modern, profesion
 | 230660221113  | Muhammad Andre     |
 
 ---  
-🔗 **Link:** [Lihat Aplikasinya di Netlify](https://uas-kelompok2-4b.netlify.app)
 
-## ✨ Fitur Utama
+# 🎓 Tema & Deskripsi Aplikasi (Edu-Time – Smart Activity & Time Manager for Students)
 
-- ✅ **CRUD Lengkap** (Create, Read, Update, Delete)
-- 🔎 **Filter & Search** real-time
-- 📂 Kategori aktivitas (Tugas, Ujian, Rapat, dll)
-- 🌗 Dark/Light Mode
-- 🧠 Status indikator selesai/belum
-- 🎨 Desain dengan **animasi teks & logo interaktif**
-- 💾 Konfirmasi sebelum menghapus
-- 📱 Responsive & user friendly
+Edu-Time adalah aplikasi manajemen aktivitas dan waktu yang dirancang khusus untuk mahasiswa. Aplikasi ini membantu pengguna mencatat, mengelola, dan memantau aktivitas harian seperti tugas, ujian, dan kegiatan kuliah lainnya dengan cara yang modern, interaktif, dan mudah digunakan.  
 
----
+---  
+
+## ✨ Fitur Aplikasi
+
+- 🌙 Dark/Light Mode: Tampilan mode gelap dan terang yang bisa diubah kapan saja.
+- 🎯 Tambah Aktivitas: Masukkan judul, kategori (Tugas/Ujian), tanggal, dan deskripsi aktivitas.
+- 📋 Daftar Aktivitas: Menampilkan semua aktivitas yang telah ditambahkan.
+- ✅ Tandai Selesai / Belum: Tandai aktivitas sebagai selesai atau belum selesai.
+- 🗑️ Edit & Hapus: Edit informasi aktivitas atau hapus jika tidak diperlukan.
+- 🔍 Pencarian: Cari aktivitas berdasarkan judul.
+- 🗂️ Filter Kategori: Tampilkan aktivitas berdasarkan kategori.
+- 📊 Statistik Aktivitas: Lihat jumlah total, yang selesai, dan belum selesai.
+- 💾 Terdapat feedback kepada pengguna berupa notifikasi ketika menambah data, mengedit dan menghapus.
+- 📱 Responsive & user friendly  
+
+---  
+
 
 ## 📸 Tampilan Aplikasi
 
@@ -45,17 +50,20 @@ Aplikasi manajemen tugas dan aktivitas mahasiswa berbasis web, modern, profesion
 
 ---
 
-## 📚 Contoh Struktur Data
+## 📚 Struktur Data Aktivitas 
 
-```js
 {
-  id: 1,
-  title: "Judul Aktivitas",
-  category: "Tugas",
-  deadline: "2025-07-20",
-  description: "Deskripsi Tugas",
-  isDone: false
-}
+  id: string,           // ID unik berbasis timestamp
+  title: string,        // Judul aktivitas
+  category: string,     // Kategori (Tugas, Ujian, dll)
+  date: string,         // Tanggal aktivitas (format: YYYY-MM-DD)
+  description: string,  // Deskripsi aktivitas
+  isDone: boolean       // Status selesai (true/false)
+}  
+
+---  
+
+## 🗂️ Struktur Direktori 
 
 uas-kelompok2-4b/
 ├── public/
@@ -79,3 +87,6 @@ uas-kelompok2-4b/
 ├── postcss.config.js
 ├── tailwind.config.js
 └── vite.config.js
+
+---  
+🔗 **Link:** [Lihat Aplikasinya di Netlify](https://uas-kelompok2-4b.netlify.app)
