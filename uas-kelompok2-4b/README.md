@@ -27,6 +27,7 @@ Edu-Time adalah aplikasi manajemen aktivitas dan waktu yang dirancang khusus unt
 - 📊 Statistik Aktivitas: Lihat jumlah total, yang selesai, dan belum selesai.
 - 💾 Terdapat feedback kepada pengguna berupa notifikasi ketika menambah data, mengedit dan menghapus.
 - 📱 Responsive & user friendly  
+- **Penyimpanan Lokal**: Data tetap tersimpan meski browser ditutup.
 
 ---  
 
@@ -57,12 +58,13 @@ Edu-Time adalah aplikasi manajemen aktivitas dan waktu yang dirancang khusus unt
   date: string,         // Tanggal aktivitas (format: "YYYY-MM-DD")
   description: string,  // Deskripsi aktivitas
   isDone: boolean       // Status selesai (true/false)
-}
-
+}  
+```
 ---  
 
 ## 🗂️ Struktur Direktori 
 
+```
 uas-kelompok2-4b/
 ├── public/
 ├── src/
@@ -85,7 +87,6 @@ uas-kelompok2-4b/
 ├── postcss.config.js
 ├── tailwind.config.js
 └── vite.config.js
-
-
+```
 ---  
 🔗 **Link:** [Lihat Aplikasinya di Netlify](https://uas-kelompok2-4b.netlify.app)
