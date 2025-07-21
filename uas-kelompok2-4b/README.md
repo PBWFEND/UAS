@@ -1,6 +1,3 @@
-
----  
-
 ## 👨‍👩‍👧‍👦 Kelompok 2 – Kelas SI-IVB
 
 | NIM           | Nama               |
@@ -50,16 +47,17 @@ Edu-Time adalah aplikasi manajemen aktivitas dan waktu yang dirancang khusus unt
 
 ---
 
-## 📚 Struktur Data Aktivitas 
+## 📚 Struktur Data Aktivitas
 
+```js
 {
   id: string,           // ID unik berbasis timestamp
   title: string,        // Judul aktivitas
-  category: string,     // Kategori (Tugas, Ujian, dll)
-  date: string,         // Tanggal aktivitas (format: YYYY-MM-DD)
+  category: string,     // Kategori (Tugas, Ujian, Organisasi, dll)
+  date: string,         // Tanggal aktivitas (format: "YYYY-MM-DD")
   description: string,  // Deskripsi aktivitas
   isDone: boolean       // Status selesai (true/false)
-}  
+}
 
 ---  
 
@@ -68,8 +66,8 @@ Edu-Time adalah aplikasi manajemen aktivitas dan waktu yang dirancang khusus unt
 uas-kelompok2-4b/
 ├── public/
 ├── src/
-│   ├── assets/           # Gambar
-│   ├── components/       # Semua komponen UI
+│   ├── assets/             # Gambar dan aset visual
+│   ├── components/         # Komponen UI
 │   │   ├── ActivityForm.jsx
 │   │   ├── ActivityItem.jsx
 │   │   ├── ActivityList.jsx
@@ -77,16 +75,17 @@ uas-kelompok2-4b/
 │   │   ├── SearchBar.jsx
 │   │   └── StatsBox.jsx
 │   ├── pages/
-│   │   └── Home.jsx      # Tampilan Utama
-│   ├── App.css           
-│   ├── App.jsx           # State utama & handler CRUD
-│   ├── index.css           
-│   └── main.jsx          # Root render React
+│   │   └── Home.jsx        # Halaman utama
+│   ├── App.css
+│   ├── App.jsx             # State utama & handler CRUD
+│   ├── index.css
+│   └── main.jsx            # Entry point React
 ├── README.md
 ├── package.json
 ├── postcss.config.js
 ├── tailwind.config.js
 └── vite.config.js
+
 
 ---  
 🔗 **Link:** [Lihat Aplikasinya di Netlify](https://uas-kelompok2-4b.netlify.app)
