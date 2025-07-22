@@ -18,22 +18,22 @@ Health and Beauty Care adalah aplikasi berbasis web yang membantu pengguna dalam
 ---
 
 ## ⚙️ Menu dan Fitur Utama:
-1. Manajemen Perawatan
+### 1. Manajemen Perawatan
    - Tambah Jadwal atau Aktivitas Perawatan Harian
    - Lihat dan Cari Jadwal atau Aktivitas Perawatan Harian
    - Ubah Jadwal atau Aktivitas Perawatan Harian
    - Hapus Jadawal atau Aktivitas Perawatan Harian
-2. Produk Favorit (Berfungsi sebagai rujukan saat mencari produk)
+### 2. Produk Favorit (Berfungsi sebagai rujukan saat mencari produk)
    - Tambah Jenis Produk Favorit
    - Lihat dan Cari Produk Favorit
    - Hapus Jenis Produk Favorit
-3. Rutinitas Harian (Berfungsi memantau pelaksanaan jadwal aktivitas perawatan harian, terlaksana/tidak terlaksana)
+### 3. Rutinitas Harian (Berfungsi memantau pelaksanaan jadwal aktivitas perawatan harian, terlaksana/tidak terlaksana)
 
 ---
 
 ## 🛠️ Struktur Data:
+### 1. Manajamen Perawatan
 ```js
-1. Manajamen Perawatan
 {
   id: String,           // ID unik (contoh: "1721538000000")
   dayOfWeek: String,    // Hari (contoh: "Monday", "Tuesday")
@@ -41,24 +41,20 @@ Health and Beauty Care adalah aplikasi berbasis web yang membantu pengguna dalam
   activityName: String, // Nama Kegiatan (contoh: "Yoga Pagi", "Masker Wajah")
   activityType: String, // Jenis Kegiatan ("Healthy", "Beauty")
 }
+```
 
-2. Produk favorit
-{
-  id: "String",                  // ID unik
-  name: "String",                // Nama Produk
-  brand: "String",               // Nama Brand
-  category: "String",            // Skincare / Bodycare / Suplemen / dll
-  price: "Number",               // Harga produk
-}
-
+### 2. Produk favorit
+```js
 {
   id: String,                   // ID unik (contoh: "prod1721538000001")
   productName: String,          // Nama Produk (contoh: "Serum Vitamin C")
   category: String,             // Kategori (contoh: "Skincare", "Makeup")
   notes: String                 // Catatan tambahan 
 }
+```
 
 ## 📁 Struktur Direktori
+```js
 Kel8_SI-IVB/
 └── health-and-beauty-care-app/
     ├── public/
@@ -112,7 +108,9 @@ Kel8_SI-IVB/
     ├── package.json
     ├── README.md
     └── vite.config.js
-          
+```
+
+---
 
 ## 🚀 Link Aplikasi Live
 https://health-and-beauty-care7.netlify.app
