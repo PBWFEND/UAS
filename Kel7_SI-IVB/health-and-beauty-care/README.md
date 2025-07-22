@@ -7,11 +7,15 @@
 2. Nabila Apriliani         : 230660221126
 3. Fitri Cahyani            : 230660221028
 
+---
+
 ## ✏️ Tema dan Deskripsi Aplikasi
 **Tema:** Kesehatan dan Kecantikkan 
 
 **Deskripsi Aplikasi:**
 Health and Beauty Care adalah aplikasi berbasis web yang membantu pengguna dalam mengelola aktivitas perawatan diri sehari-hari, baik yang berkaitan dengan kesehatan maupun kecantikan. Pengguna dapat mencatat rutinitas perawatan, menyimpan informasi produk favorit, serta memantau rutinitas aktivitas perawaratan mereka dari hari ke hari.
+
+---
 
 ## ⚙️ Menu dan Fitur Utama:
 1. Manajemen Perawatan
@@ -25,7 +29,10 @@ Health and Beauty Care adalah aplikasi berbasis web yang membantu pengguna dalam
    - Hapus Jenis Produk Favorit
 3. Rutinitas Harian (Berfungsi memantau pelaksanaan jadwal aktivitas perawatan harian, terlaksana/tidak terlaksana)
 
+---
+
 ## 🛠️ Struktur Data:
+```js
 1. Manajamen Perawatan
 {
   id: String,           // ID unik (contoh: "1721538000000")
@@ -52,58 +59,60 @@ Health and Beauty Care adalah aplikasi berbasis web yang membantu pengguna dalam
 }
 
 ## 📁 Struktur Direktori
-Kel8_SI-IVB
-├── healt-and-beauty-care-app/
-    ├── public/                 
-    │   └── vite.svg            
-    ├── src/                    
-    │   ├── assets/ 
+Kel8_SI-IVB/
+└── health-and-beauty-care-app/
+    ├── public/
+    │   └── vite.svg
+    ├── src/
+    │   ├── assets/
     │   │   ├── dashboard.png
-    │   │   ├── logo.png   
-    │   │   ├── react.svg  
-    │   ├── components/         
-    │   │   ├── DailySchedule/  
+    │   │   ├── logo.png
+    │   │   └── react.svg
+    │   ├── components/
+    │   │   ├── DailySchedule/
     │   │   │   ├── DailyScheduleForm.jsx
     │   │   │   ├── DailyScheduleForm.module.css
     │   │   │   ├── DailyScheduleItem.jsx
     │   │   │   ├── DailyScheduleItem.module.css
     │   │   │   ├── DailyScheduleList.jsx
     │   │   │   └── DailyScheduleList.module.css
-    │   │   ├── Dashboard/      
-    │   │   │   └── Dashboard.jsx
-    │   │   │   └── Dahboard.module.css
-    │   │   ├── FavoriteProduct
+    │   │   ├── Dashboard/
+    │   │   │   ├── Dashboard.jsx
+    │   │   │   └── Dashboard.module.css
+    │   │   ├── FavoriteProduct/
     │   │   │   ├── FavoriteProductForm.jsx
     │   │   │   ├── FavoriteProductForm.module.css
     │   │   │   ├── FavoriteProductItem.jsx
     │   │   │   ├── FavoriteProductItem.module.css
     │   │   │   ├── FavoriteProductList.jsx
     │   │   │   └── FavoriteProductList.module.css
-    │   │   ├── Layout/        
+    │   │   ├── Layout/
     │   │   │   ├── Header.jsx
     │   │   │   ├── Header.module.css
-    │   │   │   └── Sidebar.jsx
+    │   │   │   ├── Sidebar.jsx
     │   │   │   └── Sidebar.module.css
-    │   │   └── SearchBar/      
+    │   │   └── SearchBar/
     │   │       ├── SearchBar.jsx
     │   │       └── SearchBar.module.css
-    │   ├── hooks/              
-    │   │   └── useLocalStorage.js 
-    │   ├── pages/              
+    │   ├── hooks/
+    │   │   └── useLocalStorage.js
+    │   ├── pages/
     │   │   ├── DailySchedulePage.jsx
     │   │   ├── FavoriteProductPage.jsx
     │   │   ├── RoutineTrackerPage.jsx
     │   │   └── RoutineTrackerPage.module.css
-    │   ├── App.jsx             
-    │   ├── App.module.css      
-    │   ├── index.css            
-    │   └── main.jsx    
-    ├── .gitignore  
-    ├── eslint.config.js         
-    ├── index.html              
-    ├── package-lock.json            
-    ├── package.json       
-    ├── README.md               
-    └── vite.config.js          
+    │   ├── App.jsx
+    │   ├── App.module.css
+    │   ├── index.css
+    │   └── main.jsx
+    ├── .gitignore
+    ├── eslint.config.js
+    ├── index.html
+    ├── package-lock.json
+    ├── package.json
+    ├── README.md
+    └── vite.config.js
+          
 
 ## 🚀 Link Aplikasi Live
+https://health-and-beauty-care7.netlify.app
