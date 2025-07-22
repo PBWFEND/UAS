@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Header from './components/Layout/Header';
-import Sidebar from './components/Layout/Sidebar';
+import Header from './components/layout/Header';
+import Sidebar from './components/layout/Sidebar';
 import Dashboard from './components/Dashboard/Dashboard';
 import DailySchedulePage from './pages/DailySchedulePage';
 import FavoriteProductPage from './pages/FavoriteProductPage';
