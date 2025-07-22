@@ -1,0 +1,62 @@
+.listContainer {
+  background-color: #e0b8b8;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-top: 30px;
+}
+
+.listContainer h3 {
+  color: #562634;
+  margin-top: 0;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 1.8em;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 25px;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.filterGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.filterGroup label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #555;
+}
+
+.filterSelect {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1em;
+  min-width: 150px;
+}
+
+.productList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.noProduct {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  padding: 20px;
+  border: 1px dashed #ddd;
+  border-radius: 8px;
+  margin-top: 20px;
+}
