@@ -1,0 +1,42 @@
+/* src/components/BookPageContainer.module.css */
+.bookPageContainer {
+  position: absolute; /* Posisikan relatif terhadap root atau app-container jika perlu */
+  top: 50%; /* Posisikan di tengah vertikal */
+  left: 50%; /* Posisikan di tengah horizontal */
+  transform: translate(-50%, -50%); /* Penyesuaian untuk centering absolut */
+  width: 90%; /* Lebar halaman buku */
+  max-width: 900px; /* Batas lebar maksimum */
+  height: 85vh; /* Tinggi halaman buku */
+  max-height: 700px; /* Batas tinggi maksimum */
+  background-color: var(--color-book-page); /* Warna halaman buku */
+  background-image: url('/images/parchment-texture.png'); /* Opsional: Tambahkan tekstur perkamen jika punya */
+  background-size: cover;
+  border-radius: 5px;
+  box-shadow: 0 15px 30px var(--color-page-shadow); /* Bayangan kuat untuk efek 3D buku */
+  border: 1px solid var(--color-book-crease); /* Border tipis untuk detail halaman */
+  display: flex; /* Untuk menata konten di dalamnya */
+  flex-direction: column;
+  overflow: hidden; /* Pastikan konten tidak keluar batas halaman */
+  z-index: 50; /* Di bawah BookCover, tapi di atas background */
+
+  /* Animasi muncul */
+  opacity: 0;
+  transform: translate(-50%, -40%) scale(0.95); /* Sedikit di bawah dan mengecil saat awal */
+  transition: opacity 1s ease-out, transform 1s ease-out; /* Animasi muncul */
+  pointer-events: none; /* Tidak bisa diklik saat belum terlihat */
+}
+
+.bookPageContainer.visible {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1); /* Kembali ke posisi dan ukuran normal */
+  pointer-events: auto; /* Bisa diklik setelah terlihat */
+}
+
+/* Penyesuaian untuk Responsif */
+@media (max-width: 768px) {
+  .bookPageContainer {
+    width: 95%;
+    height: 90vh;
+    max-height: unset; /* Hapus max-height agar lebih fleksibel */
+  }
+}

@@ -1,0 +1,48 @@
+/* src/components/FilterButtons.module.css */
+.filterButtons {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  width: 100%;
+  flex-wrap: wrap; /* Agar tombol bisa pindah baris jika terlalu banyak */
+}
+
+.filterButton {
+  background-color: var(--color-book-crease); /* Warna latar tombol default */
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-autumn-orange); /* Border agar terlihat jelas */
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  flex-shrink: 0; /* Mencegah tombol mengecil terlalu banyak */
+}
+
+.filterButton:hover {
+  background-color: var(--color-autumn-red);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.filterButton.active {
+  background-color: var(--color-autumn-orange); /* Warna saat aktif */
+  color: white;
+  border-color: var(--color-autumn-red);
+  font-weight: bold;
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 480px) {
+  .filterButtons {
+    flex-direction: column; /* Tumpuk tombol secara vertikal */
+    gap: var(--spacing-md); /* Jarak antar tombol yang ditumpuk */
+  }
+  .filterButton {
+    width: 100%; /* Ambil lebar penuh */
+  }
+}
