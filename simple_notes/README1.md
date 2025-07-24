@@ -50,3 +50,4 @@ Aplikasi ini mengelola catatan dalam bentuk objek JavaScript. Setiap objek catat
 
 
 ## Link Aplikasi Live 
+https://projectkelompok5.netlify.app/
