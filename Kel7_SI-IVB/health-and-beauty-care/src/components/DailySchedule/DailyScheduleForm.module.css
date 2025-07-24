@@ -1,0 +1,87 @@
+.formContainer {
+  background-color: #ffd8db;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px; 
+}
+
+.formContainer h3 {
+  color: #562634;
+  margin-top: 0;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 1.8em;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #562634;
+}
+
+.formControl {
+  width: calc(100% - 20px); 
+  padding: 12px 10px;
+  border: 1px solid #562634;
+  border-radius: 6px;
+  font-size: 1em;
+  box-sizing: border-box; 
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+  color: #000;
+}
+
+.formControl:focus {
+  border-color: #2196f3; 
+  box-shadow: 0 0 0 3px rgba(167, 201, 87, 0.2);
+  outline: none;
+}
+
+.submitButton {
+  background-color: #ac7584; 
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: block;
+  width: 100%;
+  width: calc(100% - 20px);
+  box-sizing: border-box;
+  margin-top: 30px;
+}
+
+.submitButton:hover {
+  background-color: #2196f3; 
+}
+
+.cancelButton {
+  background-color: #ac7575; 
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: block;
+  width: 100%;
+  width: calc(100% - 20px);
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+.cancelButton:hover {
+  background-color: #2196f3;
+  transform: translateY(-2px);
+}

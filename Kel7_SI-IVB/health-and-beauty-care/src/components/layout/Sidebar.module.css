@@ -1,0 +1,42 @@
+.sidebar {
+  width: 250px;
+  background-color: #fff; /* Warna bg sidebar */
+  padding: 20px 0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+  min-height: calc(100vh - 70px); 
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar nav li {
+  margin-bottom: 10px;
+}
+
+.sidebar .navButton {
+  background: none;
+  border: none;
+  width: 100%;
+  padding: 12px 20px;
+  text-align: left;
+  font-size: 1em;
+  color: #562634; /* Warna Tulisan */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar .navButton:hover,
+.sidebar .navButton:focus {
+  background-color: #2196f3;
+  color: #fff; /* Contoh warna biru untuk hover */
+}
+
+/* Styling untuk tombol yang aktif */
+.sidebar .navButton.active {
+  background-color: #e0b8b8;
+  color: #562634;
+  font-weight: bold;
+}
