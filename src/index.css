@@ -1,0 +1,112 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #212529; /* warna teks utama */
+  background-color: #f8fafc; /* background terang */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f8fafc;
+  color: #212529;
+}
+
+a {
+  font-weight: 500;
+  color: #4361ee;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #3a56d4;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  text-align: center;
+}
+
+button {
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75em 1.5em;
+  cursor: pointer;
+  background-color: #4361ee;
+  color: #fff;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #3a56d4;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Reset input appearance */
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  color: #212529;
+  background-color: white;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #4361ee;
+  box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.2);
+}
+
+/* Responsive tweaks */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #f8f9fa;
+    background-color: #121212;
+  }
+
+  body {
+    background-color: #121212;
+    color: #f8f9fa;
+  }
+
+  input,
+  select,
+  textarea {
+    background-color: #1e1e1e;
+    color: #f8f9fa;
+    border-color: #444;
+  }
+
+  button {
+    background-color: #4cc9f0;
+    color: #000;
+  }
+
+  button:hover {
+    background-color: #3db9e0;
+  }
+}
