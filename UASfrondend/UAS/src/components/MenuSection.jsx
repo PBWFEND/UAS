@@ -8,7 +8,6 @@ export default function MenuSection({ baksoList, onAddToCart }) {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {baksoList.map(bakso => (
           <div key={bakso.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all">
-            console.log("gambar bakso:", bakso.gambar);
             <img
               src={bakso.gambar ? bakso.gambar:"/src/assets/Bakso.png"}
               alt={`Bakso ${bakso.nama}`}
