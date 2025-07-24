@@ -1,12 +1,37 @@
-# React + Vite
+TUGAS UAS PEMOGRAMAN WEB BERBASIS FRONT-END
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+KELOMPOK 6 (SI-4B)
 
-Currently, two official plugins are available:
+Rian Rianto 230660221004
+Muhammad Panji Adhitya 230660221088
+Paizal Rizki Nugraha 230660221012
+Restu Setia Diprana 230660221099
+🥣 BaksoKu - Aplikasi Pemesanan Bakso BaksoKu adalah aplikasi berbasis React yang dirancang untuk mengelola daftar menu bakso, melakukan pemesanan (keranjang belanja), dan menyimpan data secara lokal di browser menggunakan localStorage.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Fitur Utama
 
-## Expanding the ESLint configuration
+Menambah, mengedit, dan menghapus data bakso
+Tambah bakso ke keranjang (keranjang)
+Checkout pesanan
+Reset seluruh data menu
+Data disimpan secara otomatis di localStorage
+Tampilan responsif untuk berbagai ukuran layar
+Modal pop-up untuk notifikasi interaktif
+CRUD Lengkap (Create, Read, Update, Delete)
+📁 Struktur Proyek src/ │ ├── aset │ ├── Ibakso.jpg # Logo ├── komponen/ │ ├── Header.jsx │ ├── AdminPanel.jsx │ ├── MenuSection.jsx │ └── Modal.jsx │ ├── App.jsx # Komponen utama ├── App.css # Styling tambahan ├── index.css # Styling umum └── main.jsx # Entry point React
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🛠️ Teknologi
+
+Bereaksi (Vite)
+CSS (gaya responsif khusus)
+Penyimpanan lokal untuk menyimpan data
+Proyek ini dibuat sebagai bagian dari tugas UAS.
+UJIAN AKHIR SEMESTER (UAS) GENAP TAHUN AKADEMIK 2024/2025
+Mata Kuliah : Pemrograman Berbasis Web Front-End
+Semester/SKS : IV-A/B / 3 SKS
+Program Studi : S1 Sistem Informasi
+Hari/Tanggal : Kamis / Jumat
+Waktu : 13.00 – 15.30
+Dosen : Yanyan Sofiyan, M.Kom.
+Bentuk Soal :Analisis/Essay/Pilihan Ganda/Presentasi/Penugasan/Proyek *)
+Pelaksanaan :Memikat/ Berani *)
