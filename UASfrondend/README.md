@@ -7,6 +7,9 @@ KELOMPOK 6 (SI-4B)
 3. Paizal Rizki Nugraha 230660221012
 4. Restu Setia Diprana 230660221099
 
+   link Aplikasi live
+  https://kelompok6-4b-baksogo.netlify.app/ 
+
 🥣 BaksoKu - Aplikasi Pemesanan Bakso
 BaksoKu adalah aplikasi berbasis React yang dirancang untuk mengelola daftar menu bakso, melakukan pemesanan (keranjang belanja), dan menyimpan data secara lokal di browser menggunakan localStorage.
 
