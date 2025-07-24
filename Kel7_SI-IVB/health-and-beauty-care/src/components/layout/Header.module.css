@@ -1,0 +1,28 @@
+.header {
+  background-color: #ffd8db; 
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex; 
+  align-items: center; 
+  gap: 10px; /* Jarak antara logo gambar dan teks */
+}
+
+.appLogo { 
+  height: 40px; 
+  width: auto; 
+}
+
+.logoText { 
+  font-size: 1.3em; /* Ukuran font untuk teks logo */
+  font-weight: bold; 
+  color: #111111; 
+  white-space: nowrap; 
+}
+

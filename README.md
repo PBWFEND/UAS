@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 TUGAS UAS PEMOGRAMAN WEB BERBASIS FRONT-END
 
 KELOMPOK 6 (SI-4B)
@@ -53,7 +53,3 @@ Proyek ini dibuat sebagai bagian dari tugas UAS.
 **Dosen**: Yanyan Sofiyan, M.Kom.  
 **Bentuk Soal**: ~~Analisis/Essay/Pilihan Ganda/Presentasi/Penugasan~~/Proyek \*)  
 **Pelaksanaan**: ~~Luring~~ / Daring \*)
-
----
-
-link Live : https://kelompok6-4b-baksogo.netlify.app/

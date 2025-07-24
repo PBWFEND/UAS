@@ -1,0 +1,47 @@
+.main-content {
+  flex-grow: 1;
+  padding: 30px 40px;
+  overflow-y: auto;
+  background-color: var(--bg-secondary); 
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.tasks-display-area {
+  padding-bottom: 80px;
+}
+
+.task-date-group {
+  margin-bottom: 40px;
+}
+
+.task-date-group h3 {
+  font-size: 1.8em;
+  color: var(--text-heading); 
+  margin-bottom: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.task-date-group h3::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-primary-accent); 
+  border-radius: 50%;
+}
+
+.add-task-inline {
+  margin-top: 20px;
+  padding-left: 50px;
+}
+
+.no-items-message {
+  color: var(--text-muted); 
+  font-style: italic;
+  padding: 10px 0;
+  text-align: center;
+}

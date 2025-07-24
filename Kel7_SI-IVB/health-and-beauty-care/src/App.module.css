@@ -1,0 +1,16 @@
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.mainContent {
+  display: flex;
+  flex: 1; /* Agar konten utama mengisi sisa tinggi */
+}
+
+.pageContent {
+  flex: 1; /* Konten halaman mengisi sisa lebar */
+  padding: 20px;
+  background-color: #faf9f9; /* Warna latar belakang konten */
+}
