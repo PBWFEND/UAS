@@ -1,6 +1,6 @@
-## Event Planner App 
+## Event Planner App ✍️
 Aplikasi Event Planner adalah alat intuitif dan efisien untuk membantu, mengatur dan mengelola kegiatan sehari-hari dengan mudah. Dibangun dengan React dan Tailwind CSS, dengan efek *glassmorphism.*
-### Kelompok 3 SI-IVB
+### Kelompok 3 SI-IVB 
 **Anggota Kelompok:**
 1. Jajang Komara - 230660221102
 2. Yudi Aditiya Rahman - 230660221014
@@ -8,7 +8,7 @@ Aplikasi Event Planner adalah alat intuitif dan efisien untuk membantu, mengatur
 4. Adrian Nugraha - 230660221022
 
 
-#### Fitur Utama
+#### Fitur Utama 📲
 
 * **Manajemen Kegiatan Komprehensif**: Tambah, edit, tandai selesai, dan hapus kegiatan Anda dengan mudah.
 * **Filter & Pencarian Instan**:
@@ -66,8 +66,6 @@ event-planner/
 
 ```
 
- Link Aplikasi Live
+ Link Aplikasi Live :
 
-```
-
-```
+[Klik disini! 🤳](https://event-planner-nine-plum.vercel.app/)
