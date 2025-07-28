@@ -1,37 +1,67 @@
-# UJIAN AKHIR SEMESTER (UAS) GENAP TAHUN AKADEMIK 2024/2025
+Kelompok 4 
+Kelas A semester 4
+Anggota: 
+Wendi Feriyanda (230660221026)
+Sesi Pramesti (230660221017)
+Lala Jalaliah (230660221019)
+Amelia Oktaviani (230660221127)
+Yulia Rizky Afifah (230660221090)
+Clara Desmiati (230660221005)
 
-**Mata Kuliah**: Pemrograman Berbasis Web Front-End  
-**Semester/SKS**: IV-A/B / 3 SKS  
-**Program Studi**: S1 Sistem Informasi  
-**Hari/Tanggal**: Kamis / Jumat  
-**Waktu**: 13.00 – 15.30  
-**Dosen**: Yanyan Sofiyan, M.Kom.  
-**Bentuk Soal**: ~~Analisis/Essay/Pilihan Ganda/Presentasi/Penugasan~~/Proyek \*)  
-**Pelaksanaan**: ~~Luring~~ / Daring \*)
+Tema Proyek: 🎬 Manajemen Film Pribadi
 
----
+📌 Penjelasan Tema:
+Sebuah aplikasi berbasis web untuk membantu pengguna mencatat, mengelola, dan melacak daftar film yang ingin atau telah ditonton, dengan tampilan modern, ringan, dan dukungan mode gelap.
 
-### A. Deskripsi Umum
-Anda diberi kebebasan untuk memilih dan merancang sendiri tema aplikasi, dengan syarat utama aplikasi tersebut merupakan aplikasi **CRUD (Create, Read, Update, Delete)**. Fokus utama penilaian adalah pada **logika CRUD yang fungsional** dan **antarmuka pengguna (UI/UX) yang baik**. Seluruh data akan dikelola di sisi klien (client-side).
+🎯 Tujuan Proyek:
+- Membantu pengguna menyimpan daftar film favorit
+- Memberi informasi apakah film sudah ditonton atau belum
+- Bisa melakukan tambah, edit, hapus, cari, dan filter
+- Menyediakan pengalaman interaktif dengan notifikasi toast dan UI elegan
 
-### B. Tema Proyek: Bebas & Kreatif
-Pilihlah sebuah ide aplikasi yang memungkinkan pengguna untuk mengelola sekumpulan data. Kreativitas dalam memilih tema dihargai, selama semua persyaratan teknis di bawah ini terpenuhi.
+💡 Fitur-Fitur yang Mendukung Tema:
+<<<<<<< HEAD
+=======
 
-**Contoh Ide Proyek (Anda tidak harus memilih dari daftar ini):**
-- **Aplikasi Manajemen Tugas (To-do List):** Menambah, melihat, menandai selesai, dan menghapus tugas.
-- **Aplikasi Pencatat Keuangan Sederhana:** Mencatat pemasukan dan pengeluaran.
-- **Aplikasi Daftar Kontak:** Mengelola daftar kontak teman atau kolega.
-- **Aplikasi Catatan Sederhana (Simple Notes):** Membuat, mengedit, dan menghapus catatan singkat.
-- **Aplikasi Manajemen Buku (Bookshelf App):** Mengelola koleksi buku yang sudah atau akan dibaca.
+>>>>>>> dc9ed1671449c0f74ba55c2eaf623b9a4b0841a5
+Fitur	Deskripsi
+➕ Tambah Film	Masukkan judul, sutradara, dan status
+✅❌ Status Tontonan	Tandai apakah sudah/ belum ditonton
+✏️ Edit & 🗑 Hapus	Modifikasi atau hapus film dengan mudah
+🔍 Pencarian	Cari film berdasarkan judul
+🎛 Filter	Tampilkan hanya film yang sudah / belum ditonton
+🌗 Mode Gelap	Tema terang & gelap modern
+🔔 Toast Notification	Pemberitahuan visual untuk aksi pengguna
+💾 localStorage	Data tersimpan di browser, tidak hilang saat refresh
 
-#### Struktur Data
-Anda bebas menentukan struktur data untuk setiap `item` di aplikasi Anda, namun **wajib memiliki**:
+🛠 Stack Teknologi:
+- React.js → Library UI
+- Tailwind CSS → Styling responsif dan dark mode
+- Vite → Build tool modern
+- localStorage → Penyimpanan data di browser
 
-- Sebuah `id` yang unik (bisa menggunakan `String(+new Date())` atau library seperti `uuid`).
-- Minimal **dua properti data lainnya** (contoh: `{ title: 'Belajar React', isDone: false }`).
+<<<<<<< HEAD
+=======
+🧱 STRUKTUR OBJEK UTAMA: film
 
-Sebagai **contoh referensi**, untuk proyek "Aplikasi Manajemen Buku", Anda bisa menggunakan struktur data yang lebih detail seperti ini:
+Setiap film yang ditambahkan ke daftar akan disimpan dalam bentuk objek
+📦 DI MANA OBJEK INI DIGUNAKAN?
+1. Di dalam state utama React (App.jsx)
+const [films, setFilms] = useState([]);
+films adalah array dari objek film
+2. Saat menambahkan film baru:
+const filmData = {
+  id: Date.now(),
+  title,
+  director,
+  watched
+};
+addFilm(filmData);
+3. Saat mengedit:
 
+<<<<<<< HEAD
+Disamakan dengan ID:
+=======
 ```javascript
 // HANYA CONTOH
 {
@@ -43,13 +73,24 @@ Sebagai **contoh referensi**, untuk proyek "Aplikasi Manajemen Buku", Anda bisa 
 }
 ```
 Persistensi Data (Wajib)
+>>>>>>> upstream/main
 
-Gunakan `localStorage` untuk menyimpan data agar tidak hilang saat browser ditutup atau di-refresh. Manfaatkan hook `useEffect` untuk melakukan sinkronisasi antara state aplikasi dengan `localStorage`.
+film.id === updatedFilm.id ? updatedFilm : film
+4. Saat disimpan ke localStorage:
 
+<<<<<<< HEAD
+localStorage.setItem("films", JSON.stringify(films));
+=======
 C. Persyaratan Teknis & Fungsionalitas Wajib
+>>>>>>> upstream/main
 
-Apapun tema yang Anda pilih, aplikasi Anda WAJIB memiliki fungsionalitas berikut:
+    Disimpan dalam bentuk JSON array yang berisi objek-objek film
 
+<<<<<<< HEAD
+    
+link aplikasi live : https://film-manager-wens.netlify.app/
+>>>>>>> dc9ed1671449c0f74ba55c2eaf623b9a4b0841a5
+=======
 1. Struktur & State Management (Bobot: 25%)
 
 - Gunakan Vite untuk inisialisasi proyek.
@@ -108,3 +149,4 @@ E. Prosedur Pengumpulan
    - **Link Aplikasi Live**: URL Vercel/Netlify Anda yang sudah berfungsi.
 
 3. Push ke repositori https://github.com/PBWFEND/UAS
+>>>>>>> upstream/main
